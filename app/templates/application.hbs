@@ -1,3 +1,6 @@
 Welcome to Ember Beats
+{{#each audioService.sounds as |sound|}}
+  <button type="button" name="button" {{action 'play' sound}}>{{sound}}</button>
+{{/each}}
 
 {{outlet}}
